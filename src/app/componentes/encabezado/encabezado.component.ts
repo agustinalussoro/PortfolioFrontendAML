@@ -13,7 +13,7 @@ export class EncabezadoComponent {
 
   public isEditable = false;
   public nombre = 'Agustina M. Lussoro';
-  public profesion = 'Full Stack Developer Jr\nMartillera y Corredora Pública';
+  public profesion = 'Full Stack Developer Jr &\nMartillera y Corredora Pública';
   public descripcion = 'Con habilidades en conocimientos informáticos, capacidad de adaptación, proactividad, planificación de tareas, creatividad y trabajo en equipo. A mis 23 años, estoy comprometida en desarrollar mi carrera profesional en ambos campos, lo que me permite tener una visión más amplia y versátil. Me apasiona aprender y aplicar nuevas tecnologías para mejorar procesos y crear soluciones innovadoras. Estoy en busca de nuevas oportunidades para seguir creciendo profesionalmente.';
 
   activarEdicion(): void {
