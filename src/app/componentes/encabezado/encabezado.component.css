@@ -1,0 +1,111 @@
+
+.main {
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.banner {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .edit-button {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.foto-perfil {
+    object-position: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    top: 50%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.foto-perfil img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.foto-perfil .edit-button {
+    position: absolute;
+    top: 10px;
+    left: 176px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.info-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+h3,
+h5 {
+    text-align: center;
+}
+
+.sobre-mi {
+    text-align: justify;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #9C27B0;
+    border: 2px solid #9C27B0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    height: 30px;
+}
+
+.button:hover {
+    background-color: #7B1FA2;
+    border-color: #7B1FA2;
+    text-decoration: none;
+}
+
+.espacio-en-blanco {
+    width: 10px;
+    height: 1px;
+    display: inline-block;
+}
+
+.insta img {
+    width: auto;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.navbar {
+    background-color: #fff !important;
+}
+
+.segunda-row {
+    margin-top: -70px;
+}

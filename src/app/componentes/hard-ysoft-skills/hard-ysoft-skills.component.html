@@ -1,0 +1,90 @@
+<div class="seccion">
+  <h4> Hard & Soft Skills </h4>
+
+  <div class="container">
+    <div class="row">
+      <h5> Hard Skills </h5>
+      <div class="col-md-4">
+        <div class="chart-container">
+          <div class="chart-title" [contentEditable]="isEditable">{{hardSkillDes}}
+            <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+            <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+          </div>
+          <div class="chart-bar" [style.width.%]="porcentaje"></div>
+          <div class="chart-percent text-center" [contentEditable]="isEditable"> {{porcentaje}}
+            <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+            <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="chart-container">
+          <div class="chart-title" [contentEditable]="isEditable">{{hardSkillDes1}}
+            <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+            <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+          </div>
+          <div class="chart-bar" [style.width.%]="porcentaje1"></div>
+          <div class="chart-percent text-center" [contentEditable]="isEditable">{{porcentaje1}}
+            <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+            <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="chart-container">
+          <div class="chart-title" [contentEditable]="isEditable">{{hardSkillDes2}}
+            <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+            <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+          </div>
+          <div class="chart-bar" [style.width.%]="porcentaje2"></div>
+          <div class="chart-percent text-center" [contentEditable]="isEditable"> {{porcentaje2}}
+            <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+            <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h5> Soft Skills </h5>
+      <div class="col-md-4">
+        <div class="chart-container">
+          <div class="chart-title" [contentEditable]="isEditable">{{softSkill}}
+            <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+            <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+          </div>
+          <div class="chart-bar" [style.width.%]="porcentajeS"></div>
+          <div class="chart-percent text-center" [contentEditable]="isEditable"> {{porcentajeS}}
+            <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+            <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="chart-container">
+          <div class="chart-title" [contentEditable]="isEditable">{{softSkill1}}
+            <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+            <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+          </div>
+          <div class="chart-bar" [style.width.%]="porcentajeS1"></div>
+          <div class="chart-percent text-center" [contentEditable]="isEditable"> {{porcentajeS1}}
+            <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+            <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="chart-container">
+          <div class="chart-title" [contentEditable]="isEditable"> {{softSkill2}}
+            <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+            <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+          </div>
+          <div class="chart-bar" [style.width.%]="porcentajeS2"></div>
+          <div class="chart-percent text-center" [contentEditable]="isEditable"> {{porcentajeS2}}
+            <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+            <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

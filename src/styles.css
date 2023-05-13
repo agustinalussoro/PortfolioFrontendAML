@@ -1,0 +1,57 @@
+.seccion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 27px;
+    margin-right: 27px;
+    border-color: #aaaaaa;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.seccion-with-border-top {
+    border-top: 0,5px solid black;
+    margin-top: 20px;
+}
+
+.seccion-with-border-bottom {
+    border-bottom: 0,5px solid black;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    object-fit: cover;
+}
+
+.imgRedonda {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    align-items: left;
+}
+
+button {
+    align-items: left;
+}
+
+.edit-icon-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 5px;
+}
+
+h5 {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p {
+    font-size: 15px;
+}

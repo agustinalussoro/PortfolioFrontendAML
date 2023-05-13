@@ -1,0 +1,12 @@
+<div class="seccion">
+  <h4> Proyectos de diseño </h4>
+
+  <h6 [contentEditable]="isEditable"> {{proyecto}}
+    <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+    <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+  </h6>
+  <p [contentEditable]="isEditable"> {{descripcion}}
+    <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+    <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+  </p>
+</div>

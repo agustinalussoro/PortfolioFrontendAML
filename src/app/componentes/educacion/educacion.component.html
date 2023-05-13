@@ -1,0 +1,66 @@
+<div class="seccion">
+  <h4> Educación </h4>
+  <div class="row">
+    <div class="col-md-3">
+      <img [src]="imagenescuela" alt="Logo Colegio San Agustín" width="70" height="70" [contentEditable]="isEditable">
+      <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+      <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+    </div>
+    <div class="col-md-9">
+      <h5 [contentEditable]="isEditable"> {{escuela}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&#x2713;</button>
+      </h5>
+      <p [contentEditable]="isEditable"> {{tipoEducacion}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </p>
+      <p [contentEditable]="isEditable"> {{fechainicioFechafin}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3" [contentEditable]="isEditable">
+      <img [src]="imagenuniversidad" alt="Logo Universidad FASTA" width="70" height="70" [contentEditable]="isEditable">
+      <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+      <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+    </div>
+    <div class="col-md-9">
+      <h5 [contentEditable]="isEditable"> {{universidad}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </h5>
+      <p [contentEditable]="isEditable"> {{carrera}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </p>
+      <p [contentEditable]="isEditable"> {{fechainicio1Fechafin1}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <img [src]='imagencurso' alt="Logo Argentina Programa" width="70" height="70" [contentEditable]="isEditable">
+      <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+      <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+    </div>
+    <div class="col-md-9">
+      <h5 [contentEditable]="isEditable"> {{cursos}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </h5>
+      <p [contentEditable]="isEditable"> {{certificado}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </p>
+      <p [contentEditable]="isEditable"> {{fechainicio2Fechafin2}} <button class="edit-icon-button"
+          (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </p>
+    </div>
+  </div>

@@ -1,0 +1,45 @@
+<div class="seccion">
+  <h4> Experiencia Laboral </h4>
+  <div class="row">
+    <div class="col-md-3">
+      <img [src]="imagentrabajo" alt="Logo ILE" width="100" height="80" [contentEditable]="isEditable">
+      <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+      <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+    </div>
+    <div class="col-md-9">
+      <h5 [contentEditable]="isEditable"> {{nombreEmpresa}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </h5>
+      <p [contentEditable]="isEditable"> {{puesto}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </p>
+      <p [contentEditable]="isEditable"> {{fechainicioFechafinTrabajo}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <img [src]="imagentrabajo1" alt="Bandera de Italia" width="70" height="50" align="center">
+      <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+      <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+    </div>
+    <div class="col-md-9">
+      <h5 [contentEditable]="isEditable"> {{nombreEmpresa1}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </h5>
+      <p [contentEditable]="isEditable"> {{puesto1}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </p>
+      <p [contentEditable]="isEditable"> {{fechainicio1FechafinTrabajo1}}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&check;</button>
+      </p>
+    </div>
+  </div>
+</div>

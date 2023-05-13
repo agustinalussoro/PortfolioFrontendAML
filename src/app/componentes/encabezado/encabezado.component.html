@@ -1,0 +1,58 @@
+<!-- Barra de Inicio-->
+<div class="main">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://media.licdn.com/dms/image/C560BAQGv-Dd7A2pQ0g/company-logo_200_200/0/1646458288684?e=2147483647&v=beta&t=2bEkW38L80hsKUeV4gucwORSlBcJNmYd5H6CBz_Z00E"
+          alt="" width="30" height="30" class="d-inline-block align-text-top">
+        Argentina Programa #YoProgramo
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item insta">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png">
+          </li>
+          <li class="nav-item espacio-en-blanco"></li>
+          <li class="nav-item text-center">
+            <button class="button">Login</button>
+            <button class="button">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner + textos-->
+  <div class="row">
+    <div class="col-12 banner">
+      <img src="https://drive.google.com/uc?id=1pXnGOJyXGIzu1mFL1FcoLkgVhmdlTSF4" alt="Banner" id="banner-img">
+      <button class="edit-button" id="edit-banner-button">&#9998;</button>
+    </div>
+    <div class="col-12 col-md-3 foto-perfil">
+      <img src="https://drive.google.com/uc?id=13Yu6qSbaUOtR0TdMPOsi4rqVcchWNG_m" alt="Foto de Perfil"
+        id="foto-perfil-img">
+      <button class="edit-button" id="edit-foto-perfil-button">&#x270E;</button>
+    </div>
+  </div>
+
+  <div class="row segunda-row">
+    <div class="col-md-4 info-perfil">
+      <h3 [contentEditable]="isEditable">{{ nombre }}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&#x2713;</button>
+      </h3>
+      <h5 [contentEditable]="isEditable">{{ profesion }}
+        <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&#x2713;</button>
+      </h5>
+    </div>
+    <div class="col-md-8 sobre-mi">
+      <p [contentEditable]="isEditable">{{ descripcion }}
+        <button class="edit-icon-button" *ngIf="!isEditable" (click)="activarEdicion()">&#x270E;</button>
+        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&#x2713;</button>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.chart {
+  width: 90%;
+  height: 200px;
+  margin: 10px;
+  text-align: center;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.chart-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.chart-bar {
+  background-color: #AB47BC;
+  margin: 20px;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+  height: 10px;
+  margin-bottom: 5px;
+}
+
+.chart-percent {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.chart:hover .chart-bar {
+  width: 100%;
+}
+
+.row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
