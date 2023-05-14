@@ -10,6 +10,8 @@ import { HardYSoftSkillsComponent } from './componentes/hard-ysoft-skills/hard-y
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 
 import {HttpClientModule} from '@angular/common/http';
+import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,15 @@ import {HttpClientModule} from '@angular/common/http';
     ExperienciaLaboralComponent,
     EducacionComponent,
     HardYSoftSkillsComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    IniciarSesionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
