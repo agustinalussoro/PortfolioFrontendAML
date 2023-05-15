@@ -11,7 +11,7 @@ export class IniciarSesionComponent {
       this.form=this.formBuilder.group(
         {
           email:['', [Validators.required,Validators.email]],
-          password: ['', [Validators.required, Validators.minLenght(8) ] ]
+          password: ['', [Validators.required, Validators.minLength(8) ] ]
         }
       )
     }

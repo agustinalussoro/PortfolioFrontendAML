@@ -16,8 +16,7 @@
           </li>
           <li class="nav-item espacio-en-blanco"></li>
           <li class="nav-item text-center">
-            <button class="button">Login</button>
-            <button class="button">Logout</button>
+            <button class="button" (click)="iniciarSesion()">Login</button>
           </li>
         </ul>
       </div>
@@ -27,7 +26,7 @@
   <!-- Banner + textos-->
   <div class="row">
     <div class="col-12 banner">
-      <img src= "https://drive.google.com/uc?id=1Ji-Ea8h_V8BK9p8QXgS61DFaPvreuVhm" alt="Banner" id="banner-img">
+      <img src="https://drive.google.com/uc?id=1Ji-Ea8h_V8BK9p8QXgS61DFaPvreuVhm" alt="Banner" id="banner-img">
       <button class="edit-button" id="edit-banner-button">&#9998;</button>
     </div>
     <div class="col-12 col-md-3 foto-perfil">
@@ -39,13 +38,13 @@
 
   <div class="row segunda-row">
     <div class="col-md-4 info-perfil">
-      <h3 [contentEditable]="isEditable">{{ nombre }}
+      <h3 [contentEditable]="isEditable"> {{ nombre }}
         <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
-        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&#x2713;</button>
+        <button class="edit-icon-button" (click)="guardarEdicion()">&#x2713;</button>
       </h3>
       <h5 [contentEditable]="isEditable">{{ profesion }}
         <button class="edit-icon-button" (click)="activarEdicion()">&#x270E;</button>
-        <button class="edit-icon-button" *ngIf="isEditable" (click)="guardarEdicion()">&#x2713;</button>
+        <button class="edit-icon-button" (click)="guardarEdicion()">&#x2713;</button>
       </h5>
     </div>
     <div class="col-md-8 sobre-mi">

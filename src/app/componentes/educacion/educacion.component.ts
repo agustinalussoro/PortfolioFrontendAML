@@ -1,17 +1,12 @@
-import { Component, Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root'
-})
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-educacion',
   templateUrl: './educacion.component.html',
   styleUrls: ['./educacion.component.css']
 })
-
 export class EducacionComponent {
-  public isEditable = false;
+  public isEditable = true;
   public imagenescuela = 'https://drive.google.com/uc?id=1lkFK18gMx2osd7OnKM3HGUtnRzJrYYqK'
   public escuela = 'Colegio San Agustín';
   public tipoEducacion = 'Educación Inicial, Primaria y Secundaria';
@@ -24,6 +19,7 @@ export class EducacionComponent {
   public cursos = 'Argentina Programa #SeProgramar';
   public certificado = 'Curso de programación';
   public fechainicio2Fechafin2 = 'Mayo 2022 - Julio 2022';
+  public estaLogueado = false;
 
   activarEdicion() {
     this.isEditable = true;

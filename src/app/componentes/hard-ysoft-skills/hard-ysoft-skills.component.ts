@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
   selector: 'app-hard-ysoft-skills',
@@ -8,34 +7,30 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 })
 
 export class HardYSoftSkillsComponent implements OnInit {
-
-  constructor(private datosPortfolio: PortfolioService) { }
-
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data)
-    });
+    throw new Error('Method not implemented.');
   }
 
-  public isEditable = false;
+  public isEditable = true;
   public hardSkillDes = 'Lenguajes de Programación Frontend: HTML, CSS, Typescript y JavaScript'
   public porcentaje = '80%';
   public hardSkillDes1 = 'Lenguajes de Programación Backend: Java y MySQL';
   public porcentaje1 = '70%';
   public hardSkillDes2 = 'Desarrollo de aplicaciones web con Bootstrap y Angular'
   public porcentaje2 = '90%';
-  public softSkill= 'Habilidades Interpersonales: resiliencia, compromiso, motivación, curiosidad, autodisciplina y responsabilidad';
+  public softSkill = 'Habilidades Interpersonales: resiliencia, compromiso, motivación, curiosidad, autodisciplina y responsabilidad';
   public porcentajeS = '90%';
-  public softSkill1= 'Competencias Sociales: empatía, capacidad de integración, comunicación y para trabajar en equipo.';
+  public softSkill1 = 'Competencias Sociales: empatía, capacidad de integración, comunicación y para trabajar en equipo.';
   public porcentajeS1 = '90%';
-  public softSkill2= 'Habilidades Metódicas: habilidades analíticas, capacidad de organización, técnicas de presentación y resolución de problemas';
+  public softSkill2 = 'Habilidades Metódicas: habilidades analíticas, capacidad de organización, técnicas de presentación y resolución de problemas';
   public porcentajeS2 = '80%';
+  public estaLogueado = false;
 
-  activarEdicion() {
+  activarEdicion(): void {
     this.isEditable = true;
   }
 
-  guardarEdicion() {
+  guardarEdicion(): void {
     this.isEditable = false;
   }
 }

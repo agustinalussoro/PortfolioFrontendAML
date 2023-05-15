@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'PortfolioFrontendAML';
+  isEditable = false;
+
+  toggleEditable() {
+    this.isEditable = !this.isEditable;
+  }
 }

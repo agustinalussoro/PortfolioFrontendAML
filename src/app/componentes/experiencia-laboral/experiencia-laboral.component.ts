@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
   selector: 'app-experiencia-laboral',
@@ -7,17 +6,13 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./experiencia-laboral.component.css']
 })
 
-export class ExperienciaLaboralComponent implements OnInit{
-  
-  constructor(private datosPortfolio:PortfolioService) {}
-
+export class ExperienciaLaboralComponent implements OnInit {
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data)
-    });
+    throw new Error('Method not implemented.');
   }
-  
-  public isEditable = false;
+
+
+  public isEditable = true;
   public imagentrabajo = 'https://drive.google.com/uc?id=1HUrVEc8QwRH_l2v-RkbS3KovdgC0gdkh'
   public nombreEmpresa = 'Instituto de Lenguas Extranjeras. ILE.';
   public puesto = 'Community Manager. Diseñadora. Administración.';
@@ -27,11 +22,11 @@ export class ExperienciaLaboralComponent implements OnInit{
   public puesto1 = 'Enseñanza del idioma y desarrollo de material didáctico';
   public fechainicio1FechafinTrabajo1 = 'Octubre 2020 - Actualidad';
 
-  activarEdicion() {
+  activarEdicion(): void {
     this.isEditable = true;
   }
 
-  guardarEdicion() {
+  guardarEdicion(): void {
     this.isEditable = false;
   }
 }

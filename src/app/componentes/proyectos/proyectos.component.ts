@@ -1,30 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
   selector: 'app-proyectos',
   templateUrl: './proyectos.component.html',
   styleUrls: ['./proyectos.component.css']
 })
-export class ProyectosComponent implements OnInit{
-  
-  constructor(private datosPortfolio:PortfolioService) {}
-
+export class ProyectosComponent implements OnInit {
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data)
-    });
+    throw new Error('Method not implemented.');
   }
-
-  public isEditable = false;
+  public isEditable = true;
   public proyecto = 'Diseño de Portfolio Web para Argentina Programa'
   public descripcion = 'Desarrollo de mi propio Portfolio Web. Este trabajo consiste en el desarrollo de una aplicación web full stack que muestra mis datos personales, educación, experiencia laboral, habilidades y proyectos en los que he trabajado.';
+  public estaLogueado = false;
 
-  activarEdicion() {
+  activarEdicion(): void {
     this.isEditable = true;
   }
 
-  guardarEdicion() {
+  guardarEdicion(): void {
     this.isEditable = false;
   }
 }
