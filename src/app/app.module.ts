@@ -12,6 +12,7 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import {HttpClientModule} from '@angular/common/http';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     EducacionComponent,
     HardYSoftSkillsComponent,
     ProyectosComponent,
-    IniciarSesionComponent
+    IniciarSesionComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
